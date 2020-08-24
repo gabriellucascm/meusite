@@ -1,14 +1,17 @@
 h1{
-    text-align: center;
+    text-align: right;
 }
 p{
     text-align: justify;
+    margin-right: 50px;
 }
 body{
     margin-left: 20px;
     margin-right: 20px;
-    background-color: #fff5d7;
-    color: #2d545e;
+    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 75%);
+    background-repeat: no-repeat;   
+    background-attachment: fixed;
+    color:#2d545e;
 }
 img{
     width: 350px;
@@ -17,16 +20,47 @@ img{
     border: solid black 1px;
     padding: 2px;
 }
-ul{
-    list-style-position: inside;
-}
 figcaption{
     float:left;
     clear:left;
 }
 html{
-    font-size: 22px;
+    font-size: 27px;
     font-family: Candara; 
-    font-color:#2d545e;
 }
+span {
+    cursor:pointer;
+    color:blue;
+    text-decoration:underline;
+}
+.social ul{
+    display:flex;
+    margin:0;
+    padding:0;
+}
+.social ul li{
+    list-style: none;
+    margin-right:50px;
+    margin-left: auto;
+    margin-right: auto;
 
+}
+.social ul li .fa{
+    line-height:60px;
+    transition:.6s;
+    color:#000;
+    cursor:pointer;
+}
+.social ul li a{
+    position: relative;
+    display:block;
+    width:60px;
+    height:60px;
+}
+.social ul li a:hover{
+    transform:translate(0,-1px);
+}
+footer {
+    clear: both;
+    margin-top:150px;
+}
